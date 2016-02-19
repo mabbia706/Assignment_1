@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/show_contact_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/showContactPhoto"
+        android:src="@drawable/default_contact_photo"
+        android:minWidth="500dp"
+        android:minHeight="200dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_below="@+id/show_contact_toolbar"
+        android:layout_above="@+id/show_contact_name_view"
+        />
+
+    <ImageView
+        android:layout_width="49dp"
+        android:layout_height="32dp"
+        android:id="@+id/show_contact_name_view"
+        android:layout_gravity="left"
+        android:src="@drawable/phone_number"
+        android:minHeight="10dp"
+        android:minWidth="10dp"
+        android:scaleType="fitXY"
+        android:nestedScrollingEnabled="false"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/show_contact_name_text"
+        android:minWidth="250dp"
+        android:layout_gravity="right"
+        android:width="250dp"
+        android:layout_alignTop="@+id/show_contact_name_view"
+        android:layout_toRightOf="@+id/show_contact_name_view"
+        android:layout_toEndOf="@+id/show_contact_name_view" />
+
+    <ImageView
+        android:layout_width="49dp"
+        android:layout_height="32dp"
+        android:id="@+id/show_phone_number_view"
+        android:src="@drawable/phone"
+        android:layout_below="@+id/show_contact_name_view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignRight="@+id/show_contact_name_view"
+        android:layout_alignEnd="@+id/show_contact_name_view" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/show_phone_number_text"
+        android:minWidth="250dp"
+        android:layout_gravity="right"
+        android:width="250dp"
+        android:layout_alignTop="@+id/show_phone_number_view"
+        android:layout_alignLeft="@+id/show_contact_name_text"
+        android:layout_alignStart="@+id/show_contact_name_text" />
+
+    <ImageView
+        android:layout_width="49dp"
+        android:layout_height="32dp"
+        android:id="@+id/show_dob_view"
+        android:src="@drawable/dob"
+        android:layout_below="@+id/show_phone_number_view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitXY"
+        android:layout_alignRight="@+id/show_phone_number_view"
+        android:layout_alignEnd="@+id/show_phone_number_view"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/show_date_text"
+        android:layout_alignTop="@+id/dob_view"
+        android:layout_alignLeft="@+id/show_phone_number_text"
+        android:layout_alignStart="@+id/show_phone_number_text"
+        android:layout_alignBottom="@+id/show_dob_view" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/show_month_text"
+        android:layout_toRightOf="@+id/show_date_text"
+        android:layout_toEndOf="@+id/show_date_text"
+        android:layout_alignBottom="@+id/show_date_text"
+        android:layout_alignTop="@+id/show_date_text" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/show_year_text"
+        android:layout_alignTop="@+id/show_month_text"
+        android:layout_alignBottom="@+id/show_month_text"
+        android:layout_alignRight="@+id/show_phone_number_text"
+        android:layout_alignEnd="@+id/show_phone_number_text" />
+
+
+
+
+</RelativeLayout>
